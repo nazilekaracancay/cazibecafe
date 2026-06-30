@@ -255,6 +255,11 @@ section{position:relative}
 .proof-score .meta{font-size:.86rem;color:var(--ink-soft);font-weight:300}
 @media(max-width:860px){.proof-grid{grid-template-columns:1fr}.proof-card{padding:28px}}
 
+
+.poligon-feature{background:var(--paper-2)}
+.dark-actions .btn-outline-dark{border:1px solid var(--ink);color:var(--ink);background:transparent}
+.dark-actions .btn-outline-dark:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+
 /* ---------- GALLERY ---------- */
 .gallery .sec-head{margin-bottom:48px}
 .masonry{columns:3;column-gap:18px}
@@ -502,55 +507,106 @@ form .btn{width:100%;justify-content:center;margin-top:8px}
 <section class="menu sec-pad" id="menu">
   <div class="wrap">
     <div class="sec-head reveal">
-      <p class="eyebrow">Menü & Hizmetler</p>
-      <h2>Günün her anına uygun seçenekler</h2>
-      <p>Kahvaltı, cafe lezzetleri, ana yemekler ve poligon deneyimi tek bir kullanıcı akışında sunulur.</p>
+      <p class="eyebrow">Menü</p>
+      <h2>Mevcut menü yapısı, daha premium bir deneyime dönüşür</h2>
+      <p>Cazibe’nin geniş menüsü; ziyaretçilerin aradığını daha hızlı bulacağı, mobilde kolay gezilebilen ve rezervasyona yönlendiren bir yapıyla sunulur.</p>
     </div>
 
     <div class="menu-tabs reveal" id="menuTabs">
-      <button class="menu-tab active" data-t="kahvalti">Kahvaltı</button>
+      <button class="menu-tab active" data-t="one-cikan">Öne Çıkanlar</button>
+      <button class="menu-tab" data-t="kahvalti">Kahvaltı</button>
       <button class="menu-tab" data-t="restaurant">Restaurant</button>
-      <button class="menu-tab" data-t="cafe">Cafe & Tatlı</button>
+      <button class="menu-tab" data-t="icecek">Cafe & İçecek</button>
+      <button class="menu-tab" data-t="tatli">Tatlı & Atıştırmalık</button>
       <button class="menu-tab" data-t="poligon">Poligon</button>
-      <button class="menu-tab" data-t="etkinlik">Özel Günler</button>
     </div>
 
-    <div class="menu-panel active" data-p="kahvalti">
-      <div class="bk-banner reveal"><div class="bk-l"><h3>Serpme Kahvaltı & Sabah Lezzetleri</h3><p>Aile buluşmaları ve hafta sonu kahvaltıları için sıcak, doyurucu ve paylaşılabilir menü yapısı.</p></div><div class="bk-pr">Rezervasyon<small>Önerilir</small></div></div>
+    <div class="menu-panel active" data-p="one-cikan">
+      <div class="bk-banner reveal"><div class="bk-l"><h3>Cazibe Special Güveç</h3><p>Dana eti, kuzu eti, patates, soğan, domates ve özel soslarla hazırlanan imza lezzet.</p></div><div class="bk-pr">Şef Önerisi<small>Özel Lezzet</small></div></div>
       <div class="menu-cols">
-        <div class="menu-item"><div class="mi-l"><h4>Serpme Kahvaltı</h4><p>Peynir çeşitleri, zeytinler, sıcak lezzetler, reçeller ve taze ekmekler.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Sıcak Kahvaltılıklar</h4><p>Menemen, omlet, patates ve günlük hazırlanan tamamlayıcı lezzetler.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Çay & Kahve Eşliği</h4><p>Kahvaltı deneyimini tamamlayan sıcak içecek seçenekleri.</p></div></div>
+        <div class="menu-item signature"><div class="mi-l"><h4>Cazibe Special Güveç</h4><p>Mevcut web sitesindeki özel yemek alanı daha güçlü görsel ve açıklama ile öne çıkarılır.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Yaz Özel Specialler</h4><p>Mevsimsel kampanyalar ve yazlık özel tabaklar için ayrı bir menü girişi.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Terayağlı Mantarlı Cazibem</h4><p>Özel yemekler bölümünde vurgulanabilecek ikinci imza lezzet.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Rezervasyonlu Grup Masaları</h4><p>Aile, arkadaş grubu ve özel gün ziyaretleri için WhatsApp rezervasyona yönlendirme.</p></div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-p="kahvalti">
+      <div class="menu-cols">
+        <div class="menu-item"><div class="mi-l"><h4>Kahvaltı</h4><p>Serpme kahvaltı, sıcak kahvaltılıklar ve güne keyifli başlamak isteyen misafirler için zengin seçenekler.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Çocuk Menü</h4><p>Aile ziyaretlerinde çocuklar için ayrıca görünür hale getirilecek kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Sıcak İçecekler</h4><p>Kahvaltı deneyimini tamamlayan çay ve kahve seçenekleri.</p></div></div>
       </div>
     </div>
 
     <div class="menu-panel" data-p="restaurant">
       <div class="menu-cols">
-        <div class="menu-item"><div class="mi-l"><h4>Ana Yemekler</h4><p>Gün boyu tercih edilebilecek et, tavuk ve özel tabak seçenekleri.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Paylaşmalık Lezzetler</h4><p>Arkadaş grupları ve aile masaları için ideal başlangıç ve ara sıcaklar.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Çocuk ve Aile Dostu Seçenekler</h4><p>Aile ziyaretlerine uygun rahat ve ulaşılabilir menü kurgusu.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Ara Sıcaklar</h4><p>Masaya paylaşmalık başlangıçlar ve iştah açıcı lezzetler.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Çıtır Lezzetler</h4><p>Gün içinde hızlı ve keyifli ziyaretler için pratik seçenekler.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Çorbalar</h4><p>Menüde kolay erişilebilir ayrı kategori olarak sunulur.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Salata & Bowl</h4><p>Daha hafif öğün arayan misafirler için ayrıştırılmış kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Beyaz Etler</h4><p>Tavuk ve benzeri ana yemek seçenekleri.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Ana Yemekler & Kırmızı Etler</h4><p>Restaurant deneyiminin en güçlü ana kategorilerinden biri.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Izgara ve Kebap</h4><p>Geleneksel ve doyurucu lezzetler için ayrı görünür kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Pizza & Pideler</h4><p>Kalabalık masalar ve paylaşım odaklı siparişler için güçlü kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Hamburger</h4><p>Genç kitle ve cafe ziyaretleri için hızlı satış potansiyeli olan kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Wraps & Quesadillas</h4><p>Pratik, hızlı ve gün içi siparişlere uygun kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Fajita</h4><p>Öne çıkarılabilecek özel restaurant kategorisi.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Yöreden Lezzetler</h4><p>Yerel mutfak algısını güçlendiren marka değeri yüksek alan.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Diyet Menü</h4><p>Sağlıklı seçim arayan misafirler için ayrı görünür yapı.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Makarnalar</h4><p>Klasik restaurant menüsünde kolay erişim sağlayan kategori.</p></div></div>
       </div>
     </div>
 
-    <div class="menu-panel" data-p="cafe">
+    <div class="menu-panel" data-p="icecek">
       <div class="menu-cols">
-        <div class="menu-item"><div class="mi-l"><h4>Kahve & Soğuk İçecekler</h4><p>Gün içi molalar ve arkadaş buluşmaları için cafe içecekleri.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Tatlılar</h4><p>Kahve yanında tercih edilebilecek günlük tatlı ve pasta seçenekleri.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Atıştırmalıklar</h4><p>Hızlı ve keyifli ziyaretler için hafif lezzetler.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Soğuk Kahveler</h4><p>Özellikle genç hedef kitle ve sosyal medya ziyaretleri için öne çıkarılır.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Çaylar / Bitki Çayları</h4><p>Uzun oturum ve cafe deneyimi için ayrı kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Yöresel Kahveler</h4><p>Markaya farklılık katacak özel içecek alanı.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Soft İçecekler</h4><p>Günlük ziyaretlerde hızlı seçime uygun kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Frozen</h4><p>Yaz dönemi için görsel iletişimde kullanılabilecek içecek grubu.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Ev Yapımı Taze İçecekler</h4><p>Doğal ve taze algısını güçlendiren kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Frappe</h4><p>Modern cafe menüsü içinde öne çıkarılabilir.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Milkshake</h4><p>Tatlı ve genç hedef kitle iletişimi için güçlü kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Smoothie</h4><p>Sağlıklı ve ferah seçenekler için ayrı kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Espresso Bazlı Kahveler</h4><p>Cafe kimliğini güçlendiren temel kategori.</p></div></div>
+      </div>
+    </div>
+
+    <div class="menu-panel" data-p="tatli">
+      <div class="menu-cols">
+        <div class="menu-item"><div class="mi-l"><h4>Tatlılar</h4><p>Kahve yanına önerilecek tatlı seçenekleri ve özel sunumlar.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Nargile</h4><p>Mevcut menüde yer alan deneyim odaklı kategori.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Mezeler</h4><p>Akşam ziyaretleri ve paylaşım masaları için ayrı alan.</p></div></div>
       </div>
     </div>
 
     <div class="menu-panel" data-p="poligon">
       <div class="menu-cols">
-        <div class="menu-item signature"><div class="mi-l"><h4>Poligon Deneyimi</h4><p>Yemeğin yanında farklı bir aktivite arayan misafirler için özel deneyim alanı.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Bilgi & Rezervasyon</h4><p>Poligon kullanımı ve detaylı bilgi için WhatsApp üzerinden hızlı iletişim.</p></div></div>
+        <div class="menu-item signature"><div class="mi-l"><h4>Cazibe Poligon</h4><p>Restaurant ve cafe deneyimine ek olarak markayı farklılaştıran aktivite alanı.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Güvenli Deneyim</h4><p>Profesyonel yönlendirme ve kontrollü kullanım mesajı net şekilde vurgulanır.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Arkadaş Grupları</h4><p>Yemek sonrası farklı bir aktivite arayan gruplar için güçlü teklif alanı.</p></div></div>
+        <div class="menu-item"><div class="mi-l"><h4>Bilgi & Rezervasyon</h4><p>Poligon detayları için WhatsApp ve telefon CTA’ları ayrı görünür hale getirilir.</p></div></div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="menu-panel" data-p="etkinlik">
-      <div class="menu-cols">
-        <div class="menu-item"><div class="mi-l"><h4>Doğum Günü & Kutlama</h4><p>Özel masa talepleri, kalabalık grup organizasyonları ve kutlamalar.</p></div></div>
-        <div class="menu-item"><div class="mi-l"><h4>Kurumsal Buluşmalar</h4><p>Toplantı, ekip yemeği ve özel davetler için uygun mekan deneyimi.</p></div></div>
+<!-- POLIGON FEATURE -->
+<section class="poligon-feature sec-pad" id="poligon">
+  <div class="wrap about-grid">
+    <div class="about-media reveal">
+      <img src="https://images.unsplash.com/photo-1596495577886-d920f1fb7238?q=80&w=1600&auto=format&fit=crop" alt="Cazibe Poligon deneyimi" loading="lazy" />
+      <div class="about-tag">Yemekten sonra farklı bir deneyim.</div>
+    </div>
+    <div class="about-copy reveal reveal-d1">
+      <p class="eyebrow">Cazibe Poligon</p>
+      <h2>Lezzetin yanında unutulmaz bir aktivite.</h2>
+      <p>Cazibe’yi rakiplerinden ayıran en güçlü alanlardan biri poligon deneyimidir. Bu bölüm, web sitesinde ayrı bir değer önerisi olarak konumlandırılarak hem arkadaş gruplarını hem de özel organizasyonları rezervasyona yönlendirir.</p>
+      <p><strong>Güvenli deneyim, profesyonel yönlendirme ve grup ziyaretleri</strong> için net bilgi alanlarıyla ziyaretçinin karar süreci kolaylaştırılır.</p>
+      <div class="hero-actions dark-actions">
+        <a href="#reserve" class="btn btn-gold">Poligon İçin Bilgi Al</a>
+        <a href="#gallery" class="btn btn-outline-dark">Mekanı Gör</a>
       </div>
     </div>
   </div>
